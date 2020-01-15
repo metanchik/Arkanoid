@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildServerSettings">
+    <option name="LOGIN" value="" />
+    <option name="SERVER_URL" value="http://buildserver" />
+    <option name="REMEMBER_ME" value="true" />
+    <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
+    <option name="INSPECTIONS_BUILD_TYPE_IDS" />
+    <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="COVERAGE_SETTINGS" />
+    <option name="TEST_STATUS_ENABLED" value="true" />
+    <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
+    <option name="POSTPONE_SUITABLE_CONFIGURATIONS_SEARCH" value="false" />
+    <option name="ARTIFACTS_BUILD_TYPE_IDS" />
+    <option name="PERFORM_COMMIT_IF_SUCCESSFUL" value="true" />
+    <option name="PERFORM_COMMIT_IF_NO_NEW_FAILED_TESTS" value="false" />
+    <option name="REQUEST_CONFIRMATON" value="false" />
+    <option name="PRE_TESTED_COMMIT" value="true" />
+    <option name="FILTER_BY_STATUS" value="false" />
+    <option name="FILTER_MARKED_AS_FIXED" value="false" />
+    <option name="SHOW_CLOSE_PROMPT" value="true" />
+    <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
+    <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <option name="showStatusBarWidget" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17f87e28-822b-4023-9952-2d6ccd39917d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/d3/e4da0781/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../TheThirdPlanet_002_2019.2.13/thethirdplanet_002/Assets/Scripts/Core/System/View/IViewService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../TheThirdPlanet_002_2019.2.13/thethirdplanet_002/Assets/Scripts/Core/System/View/LoadAssetSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CompleteWindowScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../TheThirdPlanet_002_2019.2.13/thethirdplanet_002/Assets/Scripts/System/APIs/ScriptAPI/ObjectCreatorForScriptAPI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Block.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IntersectionData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlatformController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/67/751c060b/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FieldController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../TheThirdPlanet_002_2019.2.13/thethirdplanet_002/Assets/Scripts/Core/System/Services/Services/UnityViewService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/EmptyBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BlockRegistry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IntersectionData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CompleteWindowScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelConfigs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FieldController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlatformController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WLk22uqpFfBAaefVLgwhLiJuHf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17164">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="17164" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17f87e28-822b-4023-9952-2d6ccd39917d" name="Default Changelist" comment="" />
+      <created>1578936053303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578936053303</updated>
+      <workItem from="1578936067110" duration="15240000" />
+      <workItem from="1579001005561" duration="41786000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state width="488" height="466" key="DebuggerActiveHint" timestamp="1579099667844">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="488" height="466" key="DebuggerActiveHint/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579099667844" />
+    <state width="1637" height="319" key="GridCell.Tab.0.bottom" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.0.bottom/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.0.center" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.0.center/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.0.left" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.0.left/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.0.right" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.0.right/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.1.bottom" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.1.bottom/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.1.center" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.1.center/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.1.left" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.1.left/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.1.right" timestamp="1579109220662">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.1.right/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220662" />
+    <state width="1637" height="319" key="GridCell.Tab.2.bottom" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.2.bottom/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state width="1637" height="319" key="GridCell.Tab.2.center" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.2.center/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state width="1637" height="319" key="GridCell.Tab.2.left" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.2.left/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state width="1637" height="319" key="GridCell.Tab.2.right" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.2.right/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state width="1637" height="319" key="GridCell.Tab.3.bottom" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.3.bottom/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state width="1637" height="319" key="GridCell.Tab.3.center" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.3.center/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state width="1637" height="319" key="GridCell.Tab.3.left" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.3.left/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state width="1637" height="319" key="GridCell.Tab.3.right" timestamp="1579109220663">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1637" height="319" key="GridCell.Tab.3.right/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579109220663" />
+    <state x="674" y="221" key="RiderGenerateDialog" timestamp="1579006072111">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="674" y="221" key="RiderGenerateDialog/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579006072111" />
+    <state width="848" height="513" key="XDebugger.FullValuePopup" timestamp="1579006402910">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="848" height="513" key="XDebugger.FullValuePopup/0.0.1680.1010/1680.279.1366.728@0.0.1680.1010" timestamp="1579006402910" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/BallController.cs</url>
+          <line>267</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" initialLine="252">
+            <startOffsets>
+              <option value="10971" />
+            </startOffsets>
+            <endOffsets>
+              <option value="11014" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/BallController.cs</url>
+          <line>103</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" initialLine="100">
+            <startOffsets>
+              <option value="4144" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4176" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/BallController.cs</url>
+          <line>86</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" initialLine="84">
+            <startOffsets>
+              <option value="3277" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3309" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/BallController.cs</url>
+          <line>69</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/BallController.cs" initialLine="68">
+            <startOffsets>
+              <option value="2445" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2477" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\t.menagarishvili\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\t.menagarishvili\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Arkanoid.20369021.00" t="ExcludeRecursive" />
+    <e p="D:\unity\my\Test tasks\Arkanoid" t="IncludeRecursive">
+      <e p="Arkanoid.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="BallController.cs" t="Include" />
+          <e p="Block.cs" t="Include" />
+          <e p="ButtonScript.cs" t="Include" />
+          <e p="CompleteWindowScript.cs" t="Include" />
+          <e p="FieldController.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
+          <e p="IntersectionData.cs" t="Include" />
+          <e p="LevelConfigs.cs" t="Include" />
+          <e p="LevelController.cs" t="Include" />
+          <e p="PlatformController.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
