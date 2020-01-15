@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using Random = System.Random;
 
 public class BallController : MonoBehaviour {
     public float mainSpeed = 5;
@@ -13,19 +14,20 @@ public class BallController : MonoBehaviour {
     private LevelController level;
     public float ballRadius;
     private bool isLaunched = false;
+    private float startY;
 
 
     private void Awake() {
-        speed = 10;
         borders = new List<List<Vector3>>();
         SetBorders();
         level = FindObjectOfType<LevelController>();
-        ballRadius = GameObject.Find("Ball").transform.localScale.x / 2;
+        ballRadius = transform.localScale.x / 2;
+        startY = transform.position.y;
     }
 
     private void SetBorders() {
         FieldController field = FindObjectOfType<FieldController>();
-        ballRadius = GameObject.Find("Ball").transform.localScale.x / 2;
+        ballRadius = transform.localScale.x / 2;
 
         float left = field.left + ballRadius;
         float top = field.top - ballRadius;
@@ -39,14 +41,33 @@ public class BallController : MonoBehaviour {
     }
 
     void Start() {
+        SetStartBallParams();
+    }
+
+    public void SetStartBallParams() {
+        isLaunched = false;
+        speed = 0;
         currentDirection = (Vector3.left + Vector3.up).normalized;
     }
 
     void Update() {
-        if (speed > 0) {
+        if (isLaunched && speed > 0) {
             Vector3 newPosition = GetNewPosition(transform.position, Time.deltaTime);
 
             transform.position = newPosition;
+        }
+
+        if (!isLaunched) {
+            float x = level.platform.transform.position.x;
+            transform.position = new Vector3(x, startY, 0f);
+            if (Input.GetButtonDown ("Jump") || Input.GetMouseButtonDown(0)) {
+                isLaunched = true;
+                speed = mainSpeed;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.R)) {
+            SetStartBallParams();
         }
     }
 
@@ -58,14 +79,14 @@ public class BallController : MonoBehaviour {
     private Vector3 GetNewPosition(Vector3 startPosition, float deltaTime) {
         Vector3 newPosition = Vector3.Lerp(startPosition, startPosition + speed * currentDirection,
             deltaTime);
-        newPosition.z = -0.1f;
+        newPosition.z = -0f;
 
         Vector3 intersection;
         Vector3 normal;
-        if (CheckPlatformIntersect(startPosition, newPosition, out intersection, out normal)) {
-            intersection.z = -0.1f;
+        Vector3 newDirection;
+        if (CheckPlatformIntersect(startPosition, newPosition, out intersection, out newDirection)) {
             if (intersection != startPosition) {
-                currentDirection = Vector3.Reflect(intersection - startPosition, normal).normalized;
+                currentDirection = newDirection;
 
                 if (intersection != newPosition) {
                     Vector3 b1i = newPosition - intersection;
@@ -79,7 +100,6 @@ public class BallController : MonoBehaviour {
 
         IntersectionData intersectionData;
         if (CheckBlocksIntersect(startPosition, newPosition, out intersectionData)) {
-            intersectionData.intersectionPoint.z = -0.1f;
             if (intersectionData.intersectionPoint != startPosition) {
                 normal = intersectionData.sides.First().Value[2];
                 currentDirection = Vector3.Reflect(intersectionData.intersectionPoint - startPosition, normal)
@@ -97,16 +117,22 @@ public class BallController : MonoBehaviour {
         else {
             borders.ForEach(b => {
                 if (LineSegmentsIntersect(b[0], b[1], startPosition, newPosition, out intersection)) {
-                    intersection.z = -0.1f;
-                    if (intersection != startPosition) {
-                        normal = b[2];
-                        currentDirection = Vector3.Reflect(intersection - startPosition, normal).normalized;
-                        if (intersection != newPosition) {
-                            Vector3 b1i = newPosition - intersection;
-                            Vector3 ball = newPosition - startPosition;
-                            float dt = b1i.magnitude * deltaTime / ball.magnitude;
-                            newPosition = GetNewPosition(intersection, dt);
+                    if (!b.Equals(borders.Last())) {
+
+                        if (intersection != startPosition) {
+                            normal = b[2];
+                            currentDirection = Vector3.Reflect(intersection - startPosition, normal).normalized;
+                            if (intersection != newPosition) {
+                                Vector3 b1i = newPosition - intersection;
+                                Vector3 ball = newPosition - startPosition;
+                                float dt = b1i.magnitude * deltaTime / ball.magnitude;
+                                newPosition = GetNewPosition(intersection, dt);
+                            }
                         }
+                    }
+                    else {
+                        level.LoseLife();
+                        SetStartBallParams();
                     }
                 }
             });
@@ -283,7 +309,7 @@ public class BallController : MonoBehaviour {
                 }
             }
 
-            direction = level.platform.GetDirection(intersectionRes.Key, intersection);
+            direction = level.platform.GetDirection(intersectionRes.Key, intersection, currentDirection);
 
             //todo: добавить проверку на угол
             return true;

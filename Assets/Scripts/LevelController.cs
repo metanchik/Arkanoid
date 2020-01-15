@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.XR.WSA.Input;
 
 public class LevelController : MonoBehaviour {
-    private int lives = 3;
+    public int lives = 3;
     private float levelTime;
     private int rowsCount = 15;
     private int columnsCount = 6;
@@ -15,7 +16,9 @@ public class LevelController : MonoBehaviour {
     public Block[][] blocks;
     public Vector3 blockSize;
     public GameObject completeWindow;
+    public GameObject failWindow;
     public PlatformController platform;
+    public LivesPanelScript livesPanel;
 
     public int RowsCount => rowsCount;
     public int ColumnsCount => columnsCount;
@@ -25,6 +28,7 @@ public class LevelController : MonoBehaviour {
         string config = LevelConfigs.GetLevelConfig(GameController.currentLevelIndex);
         BuildBlocks(config);
         platform = FindObjectOfType<PlatformController>();
+        livesPanel = FindObjectOfType<LivesPanelScript>();
     }
 
     private void BuildBlocks(string config) {
@@ -144,6 +148,14 @@ public class LevelController : MonoBehaviour {
             Debug.Log("Complete level!)");
             FindObjectsOfType<BallController>().ToList().ForEach(b => b.speed = 0);
             completeWindow.SetActive(true);
+        }
+    }
+
+    public void LoseLife() {
+        lives -= 1;
+        livesPanel.Actualize();
+        if (lives < 1) {
+            failWindow.SetActive(true);
         }
     }
 }

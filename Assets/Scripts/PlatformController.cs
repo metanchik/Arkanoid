@@ -13,26 +13,17 @@ public class PlatformController : MonoBehaviour {
     private FieldController field;
     private float height;
 
-    private Dictionary<PlatformNormals, List<Vector3>> normals = new Dictionary<PlatformNormals, List<Vector3>>() {
-        {PlatformNormals.Left, new List<Vector3>() {new Vector3(-0.866f, 0.5f, 0).normalized}},
-        {PlatformNormals.LeftCorner, new List<Vector3>() {new Vector3(-0.7f, 0.7f, 0).normalized}}, {
-            PlatformNormals.Top, new List<Vector3>() {
-                new Vector3(-0.5f, 0.866f, 0).normalized,
-                new Vector3(-0.259f, 0.966f, 0).normalized,
-                new Vector3(0, 1f, 0).normalized,
-                new Vector3(0.259f, 0.966f, 0).normalized,
-                new Vector3(0.5f, 0.866f, 0).normalized,
-            }
-        },
-        {PlatformNormals.RightCorner, new List<Vector3>() {new Vector3(0.7f, 0.7f, 0).normalized}},
-        {PlatformNormals.Right, new List<Vector3>() {new Vector3(0.866f, 0.5f, 0).normalized}},
+    private Dictionary<BlockSide, Vector3> normals = new Dictionary<BlockSide, Vector3>() {
+        {BlockSide.Left, new Vector3(-0.866f, 0.5f, 0).normalized},
+        {BlockSide.Top, new Vector3(0, 1f, 0).normalized},
+        {BlockSide.Right, new Vector3(0.866f, 0.5f, 0).normalized},
     };
 
     private void Awake() {
         currentLength = mainLength;
         field = FindObjectOfType<FieldController>();
         height = transform.localScale.y;
-        currentLength = 7f;
+        // currentLength = 7f;
         transform.localScale = new Vector3(currentLength, height, 1);
     }
 
@@ -73,48 +64,36 @@ public class PlatformController : MonoBehaviour {
         return sides;
     }
 
-    public Vector3 GetDirection(BlockSide side, Vector3 intersectionPoint) {
-        float left = transform.position.x - currentLength / 2;
-        float top = transform.position.y + height / 2;
-        float right = transform.position.x + currentLength / 2;
-
+    public Vector3 GetDirection(BlockSide side, Vector3 intersectionPoint, Vector3 startDirection) {
         switch (side) {
             case BlockSide.Left: {
-                if (intersectionPoint.y <= top)
-                    return normals[PlatformNormals.Left][0];
-                return normals[PlatformNormals.LeftCorner][0];
+                Vector3 normal = normals[BlockSide.Left];
+                Vector3 outVector = Vector3.Reflect(startDirection, normal);
+                
+                return outVector.normalized;
             }
             case BlockSide.Top: {
-                if (intersectionPoint.x <= left)
-                    return normals[PlatformNormals.LeftCorner][0];
-                if (intersectionPoint.x >= right)
-                    return normals[PlatformNormals.RightCorner][0];
-                float deltaTop = currentLength / normals[PlatformNormals.Top].Count;
-                if (intersectionPoint.x <= left + deltaTop)
-                    return normals[PlatformNormals.Top][0];
-                if (intersectionPoint.x <= left + deltaTop * 2)
-                    return normals[PlatformNormals.Top][1];
-                if (intersectionPoint.x <= left + deltaTop * 3)
-                    return normals[PlatformNormals.Top][2];
-                if (intersectionPoint.x <= left + deltaTop * 4)
-                    return normals[PlatformNormals.Top][3];
-                return normals[PlatformNormals.Top][4];
+                Vector3 normal = normals[BlockSide.Top];
+                Vector3 outVector = Vector3.Reflect(startDirection, normal);
+                if (Mathf.Abs(intersectionPoint.x - transform.position.x) < (currentLength * 0.4f))
+                    return outVector;
+                float coef = Mathf.Abs(intersectionPoint.x - transform.position.x - currentLength * 0.4f) * 0.1f;
+
+                float sign = outVector.x < 0 ? -1 : 1;
+                Vector3 targetVector = new Vector3(sign, 0f, 0f);
+
+                Vector3 newDirection = Vector3.Lerp(outVector, targetVector, coef);
+                
+                return newDirection.normalized;
             }
             case BlockSide.Right: {
-                if (intersectionPoint.y <= top)
-                    return normals[PlatformNormals.Right][0];
-                return normals[PlatformNormals.RightCorner][0];
+                Vector3 normal = normals[BlockSide.Right];
+                Vector3 outVector = Vector3.Reflect(startDirection, normal);
+                
+                return outVector.normalized;
             }
         }
 
         return Vector3.up;
     }
-}
-
-enum PlatformNormals {
-    Left,
-    LeftCorner,
-    Top,
-    RightCorner,
-    Right
 }

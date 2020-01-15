@@ -17,6 +17,7 @@
           <e p="IntersectionData.cs" t="Include" />
           <e p="LevelConfigs.cs" t="Include" />
           <e p="LevelController.cs" t="Include" />
+          <e p="LivesPanelScript.cs" t="Include" />
           <e p="PlatformController.cs" t="Include" />
         </e>
       </e>
